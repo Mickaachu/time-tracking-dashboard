@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="./apps/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <script defer src="./apps/index.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profile-info">
+        <img src="./images/image-jeremy.png" alt="Jeremy">
+        <div class="column">
+          <p class="report-for">Report for</p>
+          <p id="profile-name">
+            Jeremy Robson
+          </p>
+        </div>
+      </div>
+      <div class="shifts">
+        <button id="daily-shift">Daily</button>
+        <button id="weekly-shift">Weekly</button>
+        <button id="monthly-shift">Monthly</button>
+      </div>
+    </div>
+    <div class="work cards">
+      <div class="back work-back">
+        <img src="./images/icon-work.svg" alt="">
+      </div>
+      <div class="front ">
+        <div class="row">
+          <p>Work</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours-n-previous">
+          <p  class="hours">
+            <span id="work-hours"  class="current-hours">32 hrs</span>
+          </p>
+          <p class="previous"><span id="worklast">Last Week</span>- <span id="work-previous">36 hrs</span></p>
+         
+        </div>
+      
+      </div>
+    </div>
+    <div class="play cards">
+      <div class="back play-back">
+        <img src="./images/icon-play.svg" alt="">
+      </div>
+      <div class="front">
+        <div class="row">
+          <p>Play</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours-n-previous">
+          <p  class="hours">
+            <span id="play-hours" class="current-hours">10 hrs</span> 
+          </p>
+          <p class="previous"><span id="playlast">Last Week</span>- <span id="play-previous">8 hrs</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="study cards">
+      <div class="back study-back">
+        <img src="./images/icon-study.svg" alt="">
+      </div>
+      <div class="front">
+        <div class="row">
+          <p>Study</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours-n-previous">
+          <p  class="hours">
+            <span id="study-hours">4 hrs</span> 
+          </p>
+          <p class="previous"><span id="studylast">Last Week</span>- <span id="study-previous">7 hrs</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="exercise cards">
+      <div class="back exercise-back">
+        <img src="./images/icon-exercise.svg" alt="">
+      </div>
+      <div class="front">
+        <div class="row">
+          <p>Exercise</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours-n-previous">
+          <p  class="hours">
+            <span id="exercise-hours">4 hrs</span> 
+          </p>
+          <p class="previous"><span id="exerciselast">Last Week</span>- <span id="exercise-previous">5 hrs</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="social cards">
+      <div class="back social-back">
+        <img src="./images/icon-social.svg" alt="">
+      </div>
+      <div class="front">
+        <div class="row">
+          <p>Social</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours-n-previous">
+          <p  class="hours">
+            <span id="social-hours">5 hrs</span>
+          </p>
+          <p class="previous"><span id="sociallast">Last Week</span>- <span id="social-previous">10 hrs</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="selfcare cards">
+      <div class="back selfcare-back">
+        <img src="./images/icon-self-care.svg" alt="">
+      </div>
+      <div class="front">
+        <div class="row">
+          <p>Self Care</p>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours-n-previous">
+          <p  class="hours">
+            <span id="selfcare-hours">2 hrs</span> 
+          </p>
+          <p class="previous"><span id="selfcarelast">Last Week</span>- <span id="selfcare-previous">2 hrs</span></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+ 
+  
+</body>
+</html>

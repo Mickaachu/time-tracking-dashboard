@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: hsl(226, 43%, 10%);
+
+}
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+}
+.profile {
+   
+    margin-bottom: 90px;
+    position: relative;
+    height: 100px;
+    .profile-info {
+        background-color: hsl(246, 80%, 60%);
+        color: white;
+        display: flex;
+        padding: 10px;
+        height:100px;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        width: 330px;
+        position: absolute;
+
+
+    }
+    .report-for {
+        color:hsl(236, 100%, 87%);   
+        font-size: 14px;
+
+    }
+    img {
+        width: 50px;
+        height: 50px;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin-right: 20px;
+
+    }
+    #profile-name {
+        font-size: 23px;
+        font-weight: 300;
+        
+    }
+    .shifts {
+        background-color:  hsl(235, 46%, 20%);
+        height: 70px;
+        position: absolute;
+        bottom: -60px ;
+        z-index: 0;
+        padding: 20px;
+        width: 330px;
+        border-radius: 0px 0px 15px 15px;
+        display: flex;
+        justify-content: space-evenly;
+     
+    }
+    button {
+        border: none;
+        background-color: transparent;
+        width: 100px;
+        color:hsl(235, 45%, 61%);
+        font-size: 18px;
+        transition: 0.3s ease;
+    }
+    button:hover, button:active{
+        color: white;
+    }
+
+}
+.cards {
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.work-back {
+    background-color:  hsl(15, 100%, 70%);
+    
+}
+.play-back {
+    background-color: hsl(195, 74%, 62%);
+}
+.study-back {
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise-back {
+    background-color: hsl(145, 58%, 55%);
+}
+.social-back {
+    background-color: hsl(264, 64%, 52%);
+}
+.selfcare-back {
+    background-color: hsl(43, 84%, 65%);
+}
+.back{
+    display: flex;
+    justify-content: end;
+    border-radius: 15px;
+    position: absolute;
+    width: 330px;
+    height: 90px
+
+}
+.front {
+    position: absolute;
+    width: 331px;
+    background-color: hsl(235, 46%, 20%);
+    bottom: -150px;
+    height: 100px;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.3s ease;
+
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    height: 25px;
+    p{
+        color: white;
+        font-weight: 500;
+    }
+}
+.hours-n-previous {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.hours {
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+}
+.previous {
+    color:  hsl(236, 100%, 87%);
+    font-size: 16px;
+}
+.front:hover {
+    background-color: hsl(235, 45%, 61%);
+}
+@media screen and (min-width: 600px) {
+    .container {
+        grid-template-columns: auto auto ;
+    }
+}
+@media screen and (min-width: 900px){
+    .container {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        padding: 100px;  
+        grid-template-columns: auto auto auto auto ;
+    }
+    .profile {
+        grid-column: 1/2;
+        grid-row: 1/3;
+
+
+        .profile-info {
+            width: 250px;
+            height: 300px;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .shifts {
+            width: 250px;
+            height: 200px;
+            bottom: -360px ;
+            flex-direction: column;
+            
+            
+
+            button {
+                margin-top: 30px;
+                
+            }
+
+        }
+        img {
+            margin-right: 0px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 70px;
+            height: 70px;
+        }
+        #profile-name {
+            font-size: 33px;
+        }
+        
+    }
+    
+    .back {
+        width: 260px;
+
+    }
+    .front {
+        width: 261px;
+        height: 180px;
+        bottom: -220px;
+    }
+    .exercise,.social,.selfcare {
+        margin-top: 40px;
+    }
+    .hours-n-previous {
+        flex-direction: column;
+        padding-top: 30px;
+        
+    }
+    
+    .hours {
+        font-size: 42px;
+    }
+    .previous {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+}
